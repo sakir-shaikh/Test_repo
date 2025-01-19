@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames Example</title>
+</head>
+<frameset cols="25%, 75%"> <!-- Define frame columns -->
+    <frame src="menu.html" name="menu"> <!-- Frame for menu -->
+    <frame src="content.html" name="content"> <!-- Frame for content -->
+    <!-- If frames are not supported, provide fallback content -->
+    <noframes>
+        <body>
+            <p>This page uses frames, but your browser does not support them.</p>
+            <a href="#">Menu</a> | <a href="content.html">Content</a>
+        </body>
+    </noframes>
+</frameset>
+</html>
+

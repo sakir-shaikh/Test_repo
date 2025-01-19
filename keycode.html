@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Event listener for keydown (when a key is pressed)
+document.addEventListener('keydown', function(event) {
+    // Get the key code
+    const keyCode = event.keyCode || event.which;
+    console.log('Key code:', keyCode);
+
+    // Check if the pressed key is a vowel
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
+    const pressedKey = event.key.toLowerCase();
+    if (vowels.includes(pressedKey)) {
+        console.log('Vowel is pressed!');
+    }
+});
+
+// Event listener for keyup (when a key is released)
+document.addEventListener('keyup', function() {
+    // Change background color to red
+    document.body.style.backgroundColor = 'red';
+});
+
+    </script>
+</body>
+</html>

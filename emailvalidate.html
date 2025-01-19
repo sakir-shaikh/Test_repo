@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Email : <input type="email" id="email">
+        <button type="button" onclick="validateEmail()">validate</button>
+    </form>
+    <script>
+        // Import the validator library
+const validator = require('validator');
+const email = document.getElementById('email').value;
+
+// Define the validateEmail function
+function validateEmail(email) {
+    return validator.isEmail(email);
+}
+
+// Usage
+const email1 = 'abc123@gmail.com';
+const email2 = 'hello@com';
+
+alert(validateEmail(email));
+
+console.log(validateEmail(email1)); // true
+console.log(validateEmail(email2)); // false
+
+    </script>
+</body>
+</html>
